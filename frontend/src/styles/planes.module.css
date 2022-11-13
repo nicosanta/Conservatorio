@@ -1,0 +1,41 @@
+.art {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contiene {
+    display: flex;
+    flex: 1;
+}
+
+.carreras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.text {
+    padding-top: 15px;  
+}
+
+@media screen and (min-width: 820px) {
+    .art {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .contiene {
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carreras {
+        gap: 35px;
+    }
+}

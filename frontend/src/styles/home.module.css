@@ -1,0 +1,131 @@
+/*diseño movil*/
+li {
+    list-style: none;
+}
+
+h2 a {
+    color: var(--text-color);
+}
+
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    /*los elementos que no entran bajan*/
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.cajaUno,
+.cajaDos,
+.cajaTres,
+.cajaCuatro {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 15px;
+}
+
+.boxIntro,
+.boxProgramas,
+.boxGrupos,
+.boxConcierto {
+    /* position: absolute; */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.titleIntro,
+.titleProgramas,
+.titleGrupos,
+.titleConcierto {
+    font-size: 2.0em;
+    color: var(--text-color);
+}
+
+.textIntro,
+.textProgramas,
+.textGrupos,
+.textConcierto {
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+@media screen and (min-width:860px) {
+
+    h2 a {
+        color: var(--text-color);
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    .imgGraduacion,
+    .imgProgramas,
+    .imgConcierto,
+    .imgGrupos {
+        max-width: 680px;
+        align-items: center;
+    }
+      
+    .cajaUno,
+    .cajaDos,
+    .cajaTres,
+    .cajaCuatro {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content:center;
+       
+    }
+
+    .cajaDos, .cajaCuatro{
+        flex-direction: row-reverse;
+    }
+
+    .boxIntro,
+    .boxProgramas,
+    .boxGrupos,
+    .boxConcierto {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 450px;
+        flex-wrap: wrap;
+        /* overflow: hidden; oculta contenido si desborda*/
+        background-color:#F8EEEA;
+    }
+
+    .titleIntro,
+    .titleProgramas,
+    .titleGrupos,
+    .titleConcierto {
+        color: var(--text-color);
+    }
+
+    .textIntro,
+    .textProgramas,
+    .textGrupos,
+    .textConcierto {
+        color: var(--text-color); 
+    }
+
+
+    
+
+}

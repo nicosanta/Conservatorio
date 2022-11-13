@@ -1,0 +1,88 @@
+h3 {
+  font-size: 24px;
+}
+.contactotitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+   .formulario {
+    display: flex;
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.6);
+    border-radius: 7px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 24px; 
+    justify-content: center;
+  }
+  
+  input, textarea {
+    min-width: 350px;
+    max-width: 500px;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 7px;
+    
+  } 
+
+  input {
+    min-height: 50px;
+  }
+  
+  textarea {
+    min-height: 140px;
+    max-height: 300px;
+    max-width: 100%;
+    resize: none;
+  } 
+
+  .mensaje, .email, .telefono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .button {
+    text-align: center;
+    min-width: 100px;
+    max-width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .formulario {
+      max-width: 700px;
+    }
+
+    input {
+      width: 650px;
+    }
+
+    textarea {
+      width: 500px
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+  }
